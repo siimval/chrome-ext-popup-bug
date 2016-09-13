@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Extension with code injection",
+  "description": "This extension shows a bug, where content is injected to popup if popup is opened on page load",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Some sample extension"
+  },
+  "background": {
+    "scripts": [
+      "extension.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "http://*/*"
+  ]
+}
